@@ -1,5 +1,5 @@
 {
-    "name": "firedog",
+    "name": "firedog/firedog",
     "type": "library",
     "description": "FirePHP",
     "keywords": ["firephp"],
