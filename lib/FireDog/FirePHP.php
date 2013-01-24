@@ -1,4 +1,5 @@
 <?php
+namespace FireDog;
 // Authors:
 // - cadorn, Christoph Dorn <christoph@christophdorn.com>, Copyright 2007, New BSD License
 // - qbbr, Sokolov Innokenty <sokolov.innokenty@gmail.com>, Copyright 2011, New BSD License
@@ -66,7 +67,7 @@ if (!defined('E_USER_DEPRECATED')) {
  * @package FirePHPCore
  */
 
-namespace FireDog;
+
 class FirePHP
 {
 
@@ -1416,7 +1417,7 @@ class FirePHP
             $return['__className'] = $class = get_class($object);
             $classLower = strtolower($class);
 
-            $reflectionClass = new ReflectionClass($class);
+            $reflectionClass = new \ReflectionClass($class);
             $properties = array();
             foreach ($reflectionClass->getProperties() as $property) {
                 $properties[$property->getName()] = $property;
@@ -1871,7 +1872,7 @@ class FirePHP
                     array_pop($this->json_objectStack);
 
                     foreach ($properties as $property) {
-                        if ($property instanceof Exception) {
+                        if ($property instanceof \Exception) {
                             return $property;
                         }
                     }
@@ -1887,7 +1888,7 @@ class FirePHP
                 array_pop($this->json_objectStack);
 
                 foreach ($elements as $element) {
-                    if ($element instanceof Exception) {
+                    if ($element instanceof \Exception) {
                         return $element;
                     }
                 }
@@ -1908,7 +1909,7 @@ class FirePHP
                 array_pop($this->json_objectStack);
 
                 foreach ($properties as $property) {
-                    if ($property instanceof Exception) {
+                    if ($property instanceof \Exception) {
                         return $property;
                     }
                 }
@@ -1944,7 +1945,7 @@ class FirePHP
 
         $encodedValue = $this->json_encode($value);
 
-        if ($encodedValue instanceof Exception) {
+        if ($encodedValue instanceof \Exception) {
             return $encodedValue;
         }
 

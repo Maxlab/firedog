@@ -1,4 +1,5 @@
 <?php
+namespace FireDog;
 // Authors:
 // - cadorn, Christoph Dorn <christoph@christophdorn.com>, Copyright 2007, New BSD License
 // - qbbr, Sokolov Innokenty <sokolov.innokenty@gmail.com>, Copyright 2011, New BSD License
@@ -36,7 +37,6 @@
  * @license [MIT License](http://www.opensource.org/licenses/mit-license.php)
  * @package FirePHPCore
  */
-namespace FireDog;
 class FB
 {
     /**
