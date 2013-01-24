@@ -2,13 +2,13 @@
     "name": "firedog",
     "type": "library",
     "description": "FirePHP",
-    "keywords": ["firephp", "fire php"],
+    "keywords": ["firephp"],
     "license": "MIT",
     "authors": [
         {"name": "Christoph Dorn", "email": "guilhermeblanco@gmail.com"},
-        {"name": "Max Znamensky", "email": "forsag1982@gmail.com"},
+        {"name": "Max Znamensky", "email": "forsag1982@gmail.com"}
     ],
     "autoload": {
         "psr-0": { "FireDog": "lib/" }
-    },
+    }
 }
