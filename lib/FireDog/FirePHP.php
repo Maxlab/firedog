@@ -206,9 +206,9 @@ class FirePHP
      * @var array
      */
     protected $options = array(
-        'maxDepth' => 10,
-        'maxObjectDepth' => 5,
-        'maxArrayDepth' => 5,
+        'maxDepth' => 3,
+        'maxObjectDepth' => 3,
+        'maxArrayDepth' => 3,
         'useNativeJsonEncode' => true,
         'includeLineNumbers' => true
     );

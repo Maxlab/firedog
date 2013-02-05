@@ -1,3 +1,6 @@
 This package contains Debug Plugin for FirePHP.
 
 FireDog\FB::info($somevar);
+
+Monolog:
+Conflict with monolog, app\config\config_dev.yml comment monolog.
