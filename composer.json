@@ -5,7 +5,7 @@
     "keywords": ["firephp"],
     "license": "MIT",
     "authors": [
-        {"name": "Christoph Dorn", "email": "guilhermeblanco@gmail.com"},
+        {"name": "Christoph Dorn", "email": "christoph@christophdorn.com"},
         {"name": "Max Znamensky", "email": "forsag1982@gmail.com"}
     ],
     "autoload": {
